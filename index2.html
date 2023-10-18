@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Title Example</title>
+</head>
+<body>
+    <input type="text" id="inputbox" placeholder="Type anything for Title" onkeyup="keyinresult()">
+    <h1 id="result"></h1>
+    <script>
+        function keyinresult() {
+            var title = document.getElementById("inputbox").value;
+            document.getElementById("result").innerHTML = title;
+        }
+    </script>
+</body>
+</html>

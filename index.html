@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+</head>
+<body>
+<input type="text" id="input 1" placeholder="Enter the number">First number</input>
+<input type="text" id="input 2" placeholder="Enter the number">Second number</input>
+<button onclick=total() type="button" id="btn_Total">Add</button>
+<p>Total = </p><p id="Result"></p>
+<script>
+function total() {
+    var num1 = document.getElementById("input 1").value;
+    var num2 = document.getElementById("input 2").value;
+    var total = parseInt(num1) + parseInt(num2);
+    document.getElementById("Result").innerHTML = total;
+}
+</script>
+</body>
+</html>
